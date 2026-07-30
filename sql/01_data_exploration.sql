@@ -220,7 +220,7 @@ ORDER BY age_2026;
 -- • -
 
 -- Observation 4:
--- No unexpected sports or locations were identified.
+-- No unexpected sports or locations were identified in dataset.
 -- All participants belong to Football or Basketball teams in Uppsala, Sweden.
 
 -- Overall Assessment:
