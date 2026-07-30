@@ -62,7 +62,7 @@ WHERE participant_id <> '';
 
 
 -- Business Question 3
--- Participants by sport
+-- Participants by sports
 
 SELECT
     sport,
