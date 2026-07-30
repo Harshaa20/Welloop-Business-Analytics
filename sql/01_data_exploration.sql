@@ -203,6 +203,16 @@ ORDER BY age_2026;
 -- age was not recorded for coaches.
 
 -- Data Quality Assessment
+-- Total valid interview responses: 651
+-- 48 unique participants
+-- Athlete responses: 507
+-- Coach responses: 144
+--
+-- During CSV import, 405 completely empty rows were inserted into the database.
+-- These rows were identified and removed before analysis.
+--
+-- Business Insight:
+-- After cleaning, the dataset is complete and ready for business analysis.
 
 -- Observation 1:
 -- One record contains a blank participant_id.
