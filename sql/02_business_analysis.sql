@@ -134,5 +134,57 @@ ORDER BY participant_id, question_key;
 | Decision 2        | Athletes show strong willingness to adopt a digital equipment exchange when quality and convenience are ensured. |
 | Decision 3        | Trust is generally high, but long-term success depends on fairness and visible community participation.          |
 
+-- Business Decision 4
+-- Could the proposed feature reduce youth sports dropout?
 
+
+SELECT
+    participant_id,
+    team_name,
+    question_key,
+    response_text
+FROM overall_data
+WHERE question_key IN
+(
+'Q11_Athlete',
+'Q12_Athlete',
+'Q13_Athlete',
+'Q15_Coach',
+'Q16_Coach'
+)
+ORDER BY participant_id, question_key;
+
+
+SELECT
+    participant_id,
+    team_name,
+    response_text
+FROM overall_data
+WHERE question_key = 'Q16_Coach'
+ORDER BY participant_id;
+
+-- =========================================================
+-- Overall Business Insight – Decision 4
+--
+-- Athletes and coaches consistently believed that the proposed
+-- token-based equipment exchange has the potential to reduce
+-- financial barriers to youth sports participation. While they
+-- recognized that equipment affordability is only one factor
+-- influencing dropout, both stakeholder groups viewed the concept
+-- as a valuable community initiative that could improve access to
+-- sports and encourage continued participation.
+--
+-- Successful implementation depends on active user engagement,
+-- trust, clear platform rules and sufficient community adoption.
+-- Coaches also highlighted that the greatest impact is likely to
+-- occur in sports and communities where equipment costs represent
+-- a significant financial burden.
+-- =========================================================
+
+
+-- Final Recommendation to Welloop (Decision 4)
+
+-- Based on the interview findings, Welloop should proceed with developing the token-based equipment exchange as an extension of its digital wellbeing platform. 
+-- Rather than presenting it as a complete solution to youth sports dropout, the feature should be positioned as a community-driven initiative that lowers financial barriers, encourages equipment reuse, and strengthens inclusion. 
+-- To maximize adoption, Welloop should focus on building an active user community, establishing clear exchange guidelines, and initially targeting sports or communities where equipment costs are highest before expanding more broadly.
 
