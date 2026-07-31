@@ -62,7 +62,7 @@ WHERE participant_id <> '';
 
 
 -- Business Question 3
--- Participants by sport
+-- Participants by sports
 
 SELECT
     sport,
@@ -203,6 +203,16 @@ ORDER BY age_2026;
 -- age was not recorded for coaches.
 
 -- Data Quality Assessment
+-- Total valid interview responses: 651
+-- 48 unique participants
+-- Athlete responses: 507
+-- Coach responses: 144
+--
+-- During CSV import, 405 completely empty rows were inserted into the database.
+-- These rows were identified and removed before analysis.
+--
+-- Business Insight:
+-- After cleaning, the dataset is complete and ready for business analysis.
 
 -- Observation 1:
 -- One record contains a blank participant_id.
@@ -220,7 +230,7 @@ ORDER BY age_2026;
 -- • -
 
 -- Observation 4:
--- No unexpected sports or locations were identified.
+-- No unexpected sports or locations were identified in dataset.
 -- All participants belong to Football or Basketball teams in Uppsala, Sweden.
 
 -- Overall Assessment:
