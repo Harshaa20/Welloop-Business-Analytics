@@ -1,4 +1,6 @@
 # Welloop Business Analytics: Product Strategy for a Token-Based Sports Equipment Exchange Platform
+# Dashboard Link -
+https://public.tableau.com/views/Welloop_Product_Strategy_Dashboard/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link
 
 ## Project Overview
 
